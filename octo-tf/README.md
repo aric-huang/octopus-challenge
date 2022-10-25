@@ -9,7 +9,7 @@ To use this module, you should source it and pass in your list of queue names li
 
 ```
 module "cool_sqs_queue" {
-  source        = "../sqs/"
+  source        = "../modules/"
   queue_names   = ["cool_queue_name_1", "queue_2"]
 }
 ```
