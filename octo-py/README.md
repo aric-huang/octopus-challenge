@@ -1,1 +1,6 @@
-# octopus-challenge
+# Get Number of Messages in SQS Queue Script
+Use this script in order to find out how many messages are in the provided queues and dead letter queues.
+
+usages: python3 sqs_queues.py queue1_name queue2_name ... 
+        OR python3 -m sqs_queues queue1_name queue2_name ...
+
