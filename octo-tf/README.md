@@ -19,6 +19,7 @@ module "cool_sqs_queue" {
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | queue_names | The list of names to create SQS queues for | list(string) | - | yes |
+| create_role | Where or not to create SQS iam roles for | boolean | false | no |
 
 ## Outputs
 
@@ -27,3 +28,5 @@ module "cool_sqs_queue" {
 | `queue_arns` | A list of queue arns for all of the SQS queues |
 | `consume_policy_arn` | The iam policy arns for SQS message consumption |
 | `write_policy_arn` | The iam policy arns for SQS message writing |
+| `write_role_arn` | The iam role arns for SQS message writing |
+| `write_role_arn` | The iam role arns for SQS message writing |
