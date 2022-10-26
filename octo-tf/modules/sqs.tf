@@ -1,3 +1,4 @@
+# might be better to put these in an sqs/ subfolder
 resource "aws_sqs_queue" "terraform_queue" {
     count = length(var.queue_names)
     name                      = "${var.queue_names[count.index]}"
